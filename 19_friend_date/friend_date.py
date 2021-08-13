@@ -16,3 +16,12 @@ def friend_date(a, b):
         >>> friend_date(sauron, gandalf)
         True
     """
+    result = False
+
+    for a_hobby in a[2]:
+        for b_hobby in b[2]:
+            if a_hobby == b_hobby:
+                result = True
+                return result
+
+    return result
